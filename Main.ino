@@ -1,13 +1,13 @@
 #include <Servo.h>
 
-#define IN1             3
-#define IN2             4
-#define IN3             5
-#define IN4             6
-#define TRIGGER         7
-#define ECHO            8
-#define SERVO           9
-#define M_SPONGE        10
+#define IN1         3
+#define IN2         4
+#define IN3         5
+#define IN4         6
+#define TRIGGER     7
+#define ECHO        8
+#define SERVO       9
+#define M_SPONGE    10
 
 Servo servo;
 
@@ -19,14 +19,14 @@ bool off[]      = {LOW, LOW, LOW, LOW};
 
 void setup()
 {
-    pinMode (IN1, OUTPUT);
-    pinMode (IN2, OUTPUT);
-    pinMode (IN3, OUTPUT);
-    pinMode (IN4, OUTPUT);
-    pinMode (M_SPONGE, OUTPUT);
+    pinMode(IN1, OUTPUT);
+    pinMode(IN2, OUTPUT);
+    pinMode(IN3, OUTPUT);
+    pinMode(IN4, OUTPUT);
+    pinMode(M_SPONGE, OUTPUT);
 
-    pinMode (TRIGGER, OUTPUT);
-    pinMode (ECHO, INPUT);
+    pinMode(TRIGGER, OUTPUT);
+    pinMode(ECHO, INPUT);
 
     servo.attach(SERVO);
     Serial.begin(9600);
